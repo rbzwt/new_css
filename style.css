@@ -1,0 +1,98 @@
+body {
+    font-size: 18px;
+}
+.wrap {
+    padding: 0 60px;
+}
+.cubic p {
+    font-size: 16px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #d98888;
+    padding: 0;
+}
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;;
+    gap: 1rem;
+ }
+ .box {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: 1 / 4;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: blueviolet;
+ }
+ .box img {
+    width: 100%;
+    object-fit: cover;
+ }
+ .clip-path img {
+    clip-path: circle(50%);
+ }
+ h1:has(span) {
+    color: blue;
+ }
+
+ .items > li:nth-child(2 of .noted) 
+ { 
+    color: blue;
+    font-weight: bold;
+ }
+.container .item1 {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+   float: left;
+}
+.container .item1 p {
+    color: blueviolet;
+}
+.container .item2 {
+    margin-inline: 20px;
+}
+.margin-inline {
+    margin-bottom: 50px;
+}
+.nesting {
+    .data {
+        button {
+            background-color: blue;
+            color: white;
+            font-weight: 700;
+        }
+    }
+}
+.first {
+    width: 100px; 
+    height: 200px;
+    background-color: red;
+    transition: .45s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    margin-top: 10px;
+    /* transition: 0.4s; */
+    /* transition-timing-function: ease-in; */
+}
+.first:hover {
+    background-color: green;
+    width: 400px;
+}       
+.clamp img {
+    width: clamp(200px , 50% , 400px);
+}
+.card {
+    background-color: black;
+    padding: 16px;
+    margin-trim: block-end;
+  }
+  
+  .child {
+    color: white;
+    margin-bottom: 32px;
+  }
+

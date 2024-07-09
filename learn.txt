@@ -1,0 +1,35 @@
+stanger bike
+----------
+1>  
+css clamp property
+width : clamp(min , pre.value , max);
+
+2>
+transition-timing-function: linear;
+-> Specifies a transition effect with the same speed from start to end (equivalent to cubic-bezier(0,0,1,1))
+
+transition-timing-function: ease-in;
+-> Specifies a transition effect with a slow start (equivalent to cubic-bezier(0.42,0,1,1))
+
+transition-timing-function: ease-out;
+-> Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1))
+
+transition-timing-function: cubic-bezier(.11,.87,.9,.54);
+
+short-hand
+transition: top .3s cubic-bezier(.11,.87,.9,.54);
+ 	
+for making cubic-bezier 
+visit : https://cubic-bezier.com/
+
+3> subgrid : 
+
+
+4> 
+clip-path : clip the image 
+
+5> 
+stroke - sets the color of the line around an element
+
+white-space : no-wrap
+white-space : normal

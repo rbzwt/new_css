@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>  
+   
+<div class="wrap">
+    <div class="clamp-main">
+        <h2>css clamp property</h2>
+        <p>The clamp() CSS function clamps a middle value within a range of values between a defined minimum bound and a maximum bound. The function takes three parameters: a minimum value, a preferred value, and a maximum allowed value.</p>
+        <pre>width: clamp(200px , 50% , 400px);</pre>
+        <pre>clamp(min, pre.value ,max)</pre>
+        <p>it will manage the max-width of image upto 400px when our screen viewport's 50% exist. and below the 50% viewport size min width will be 200px</p>
+        <div class="clamp"><img src="about-hero-bg.png" alt="image"></div>
+    </div>
+    <div class="subgrid">
+        <h2>subgrid property</h2>
+        <p>If you set the value subgrid on grid-template-columns, grid-template-rows or both, instead of creating a new track listing the nested grid uses the tracks defined on the parent.</p>
+        <p>here my four card display below, in this lorem contents are different but in row wise other contents are persist at the same place</p>
+        
+        <div class="wrapper">
+            <div class="box">
+                <h3>hello world</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <img src="about-hero-bg.png" alt="image">
+             </div>
+             <div class="box">
+                <h3>hello world</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. landitiis iusto quis recusandae animi accusamus repudiandae nam aliquam deserunt! Est doloribus magnam nostrum? Maxime praesentium cumque molestiae nihil architecto labore facere ea fugiat vel? Amet minima eius, culpa minus eos placeat odio quo similique aliquam?</p>
+                <img src="about-hero-bg.png" alt="image">
+             </div>
+             <div class="box">
+                <h3>hello world</h3>
+                <p>Lorem, ipsum dolor sit amet  voluptates quo, blanditiis iusto quis recusandae animi accusamus repudiandae nam aliquam deserunt! Est doloribus magnam nostrum? Maxime praesentium cumque molestiae nihil architecto labore facere ea fugiat vel? Amet minima eius, culpa minus eos placeat odio quo similique aliquam?</p>
+                <img src="about-hero-bg.png" alt="image">
+             </div>
+             <div class="box">
+                <h3>hello world</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam atque, perferendis voluptates quo, blanditiis iusto quis recusandae animi accusamus repudiandae nam aliquam deserunt! Est doloribus magnam nostrum? Maxime praesentium cumque molestiae nihil architecto labore facere ea fugiat vel? Amet minima eius, culpa minus eos placeat odio quo similique aliquam?</p>
+                <img src="about-hero-bg.png" alt="image">
+             </div>
+        </div>
+    </div>
+    <div class="clip-path">
+        <h2>clip-path property</h2>
+        <p>with the use of this property we can clip the image or any content in giver format</p>
+        <pre>clip-path: circle(50%);</pre>
+        <div style="text-align: center;">
+            <img src="use-case-image.jpg" alt="image">
+        </div>
+    </div>
+    <div class="has">
+        <h2>:has pseudo-class </h2>
+        <p>The functional :has() CSS pseudo-class represents an element if any of the relative selectors that are passed as an argument match at least one element when anchored against this element.</p>
+        <p style="color: red;">currently it is only support in crome and safari</p>
+        <h3>target element:has(search selector)</h3>
+        <h3>h1:has(span)</h3>
+        <p>here it will find h1 tag which has span tag and make its color blue</p>
+        <h1>Rohit <span>Bodana</span></h1>
+        <h1>Rohit</h1>
+    </div>
+    <div class="list-item">
+        <h2>nth of child</h2>
+        <p style="color: blue;">here it will take second element of given class and make its color blue</p>
+        <pre>
+        <b style="text-decoration: underline;">css</b>
+        .items > li:nth-child(2 of .noted) 
+        { 
+            color: blue;
+            font-weight: bold;
+        }
+        </pre>
+        <ul class="items">
+            <li class="noted">one</li>
+            <li>two</li>
+            <li class="noted">three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+            <li class="noted">seven</li>
+            <li>eight</li>
+            <li>nine</li>
+            <li class="noted">ten</li>
+          </ul>
+    </div>
+    <div class="nesting">
+        <h2>css nesting</h2>
+        <p style="color: chocolate;">The CSS nesting module allows you to write your stylesheets so that they are easier to read, more modular, and more maintainable</p>
+        <p>css nesting is possible without scss.</p>
+        <pre>
+            .nesting {
+                .data {
+                    button {
+                        background-color: blue;
+                        color: white;
+                        font-weight: 700;
+                    }
+                }
+            }
+            
+        </pre>
+        <div class="data">
+            <button>submit</button>
+        </div>
+    </div>
+    <div class="cubic">
+        <h2>transition timing function property : cubic-bezier</h2>
+        <p>The cubic-bezier() function defines a Cubic Bezier curve.</p>
+        <p>The cubic-bezier() function can be used with the animation-timing-function property and the transition-timing-function property. </p>
+        <p>with this we can define start and end position duration</p>
+        <a href="https://cubic-bezier.com" target="_blank">calculate cubic-bezier</a>            
+        <div class="first"></div>
+    </div>
+    <div class="margin-trim">
+        <h2>margin-trim</h2>
+        <p style="color: rgb(145, 28, 28);">The margin-trim property is a very simple, but incredibly useful property that makes it easy to remove extra margin from the children of an element</p>
+        <p>here i have given margin bottom 32px to the child class.so it will take extra space for the last element.</p>
+        <p>so, to remove this last element space we use <strong>:nth-child element</strong> for this.</p>
+        <p>instead of this we can use <b>margin-trim property.</b></p>
+        <p>currently this is only working with the safari browser.</p>
+        <pre>
+            .card {
+                background-color: black;
+                padding: 16px;
+                <b>margin-trim: block-end;</b>
+              }
+              
+        </pre>
+        <div class="card">
+            <div class="child">Child 1</div>
+            <div class="child">Child 2</div>
+            <div class="child">Child 3</div>
+          </div>
+    </div>
+    <div class="margin-inline">
+        <h2>margin-inline property</h2>
+        <p>The margin-inline property specifies the margin at the start and end in the inline direction</p>
+        <p>it is shorthand proprty for margin-inline-start & margin-inline-end</p>
+
+        <div class="container">
+            <div class="item1">
+               <p>this is div without margin</p>
+            </div>
+            <div class="item1 item2">
+               <p>this is div with margin-inline=20px margin</p>
+            </div>
+            <div class="item1">
+               <p>this is div without margin</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
